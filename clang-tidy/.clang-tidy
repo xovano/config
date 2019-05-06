@@ -1,34 +1,56 @@
 Checks: '*,
+        -*array*-decay,
+        -*-avoid-c-arrays,
         -*-braces-around-statements,
+        -*-uppercase-literal-suffix,
+        -*-vararg,
         -cppcoreguidelines-avoid-magic-numbers,
         -cppcoreguidelines-non-private-member-variables-in-classes,
-        -cppcoreguidelines-pro-bounds-array-to-pointer-decay,
+        -cppcoreguidelines-owning-memory,
+        -cppcoreguidelines-pro-bounds-*,
         -fuchsia-*,
         -google-build-using-namespace,
         -google-default-arguments,
+        -google-readability-todo,
         -google-runtime-references,
-        -hicpp-no-array-decay,
         -hicpp-member-init,
         -hicpp-move-const-arg,
+        -hicpp-special-member-functions,
+        -hicpp-use-auto,
+        -hicpp-use-emplace,
+        -hicpp-use-equals-default,
+        -hicpp-use-equals-delete,
+        -hicpp-use-noexcept,
+        -hicpp-use-nullptr,
+        -hicpp-use-override,
+        -llvm-header-guard,
+        -llvm-include-order,
         -readability-named-parameter'
+
 
 WarningsAsErrors: ''
 HeaderFilterRegex: ''
 AnalyzeTemporaryDtors: false
 FormatStyle:     none
 
+
 CheckOptions:
   - key:    cppcoreguidelines-pro-type-member-init.IgnoreArrays
     value:  '1'
+
   - key:    misc-non-private-member-variables-in-classes.IgnoreClassesWithAllMemberVariablesBeingPublic
     value:  '1'
+
+    # https://github.com/isocpp/CppCoreGuidelines/pull/737, needs clang 8+
+  - key:    modernize-use-override.IgnoreDestructors
+    value:  '1'
+
   - key:    readability-implicit-bool-conversion.AllowIntegerConditions
     value:  '1'
   - key:    readability-implicit-bool-conversion.AllowPointerConditions
     value:  '1'
   - key:    readability-magic-numbers.IgnorePowersOf2IntegerValues
     value:  '1'
-    # clang-tidy v7 in Qt Creator doesn't regconize the above option, therefore
-    # some powers of 2 are listed below
+    # some powers of 2 are listed below for clang 7-
   - key:    readability-magic-numbers.IgnoredIntegerValues
     value:  '1;2;3;4;8;10;12;15;16;24;32;40;48;56;60;64;100;128;255;1000;65535'
