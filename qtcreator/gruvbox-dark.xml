@@ -11,7 +11,7 @@
   <style name="AutoComplete" foreground="#000080" background="#c0c0ff"/>
   <style name="CurrentLine" foreground="#ebdbb2" background="#3c3836"/>
   <style name="CurrentLineNumber" foreground="#fabd2f" background="#3c3836"/>
-  <style name="Occurrences" foreground="#ebdbb2" background="#665c54" bold="true"/>
+  <style name="Occurrences" foreground="#ebdbb2" background="#7a6d62" bold="true"/>
   <style name="Occurrences.Unused" foreground="#ebdbb2"/>
   <style name="Occurrences.Rename" foreground="#ebdbb2"/>
   <style name="Number" foreground="#d3869b"/>
@@ -26,14 +26,14 @@
   <style name="Keyword" foreground="#fb4934"/>
   <style name="PrimitiveType" foreground="#808000"/>
   <style name="Operator" foreground="#ebdbb2"/>
-  <style name="Overloaded Operator" foreground="#007b91"/>
+  <style name="Overloaded Operator" foreground="#00c2df"/>
   <style name="Punctuation"/>
   <style name="Preprocessor" foreground="#8ec07c"/>
   <style name="Label" foreground="#fb4934"/>
   <style name="Comment" foreground="#928374" italic="true"/>
   <style name="Doxygen.Comment" foreground="#fe8019"/>
   <style name="Doxygen.Tag" foreground="#ebdbb2" bold="true"/>
-  <style name="VisualWhitespace" foreground="#46413f"/>
+  <style name="VisualWhitespace" foreground="#484340"/>
   <style name="QmlLocalId" foreground="#b8bb26" bold="true" italic="true"/>
   <style name="QmlExternalId" foreground="#d3869b" italic="true"/>
   <style name="QmlTypeId" foreground="#fabd2f"/>
