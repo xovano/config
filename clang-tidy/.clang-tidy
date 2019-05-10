@@ -35,6 +35,8 @@ FormatStyle:     none
 
 
 CheckOptions:
+  - key:    cppcoreguidelines-macro-usage.CheckCapsOnly
+    value:  '1'
   - key:    cppcoreguidelines-pro-type-member-init.IgnoreArrays
     value:  '1'
 
