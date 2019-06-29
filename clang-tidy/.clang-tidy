@@ -26,6 +26,7 @@ Checks: '*,
         -hicpp-use-override,
         -llvm-header-guard,
         -llvm-include-order,
+        -readability-isolate-declaration,
         -readability-named-parameter'
 
 
