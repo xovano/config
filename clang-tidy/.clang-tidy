@@ -28,6 +28,7 @@ Checks: '*,
         -hicpp-use-override,
         -llvm-header-guard,
         -llvm-include-order,
+        -modernize-use-trailing-return-type,
         -readability-isolate-declaration,
         -readability-named-parameter'
 
@@ -59,6 +60,5 @@ CheckOptions:
     value:  '1'
   - key:    readability-magic-numbers.IgnorePowersOf2IntegerValues
     value:  '1'
-    # some powers of 2 are listed below for clang 7-
   - key:    readability-magic-numbers.IgnoredIntegerValues
-    value:  '1;2;3;4;8;10;12;15;16;24;32;40;48;56;60;64;100;128;255;1000;65535'
+    value:  '3;10;12;15;24;40;48;56;60;100;255;1000;65535'
