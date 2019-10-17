@@ -60,6 +60,6 @@ CheckOptions:
     value:  '1'
   - key:    readability-magic-numbers.IgnorePowersOf2IntegerValues
     value:  '1'
-    # 420, 438, 493, 511 are file modes (0644, 0666, 0755, 0777)
+    # 384, 420, 438, 493, 511 are file modes (0600, 0644, 0666, 0755, 0777)
   - key:    readability-magic-numbers.IgnoredIntegerValues
-    value:  '3;10;12;15;24;40;48;56;60;100;255;420;438;493;511;1000;65535'
+    value:  '3;10;12;15;24;40;48;56;60;100;255;384;420;438;493;511;1000;65535'
